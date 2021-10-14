@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
 <body>
@@ -17,17 +18,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
+    
+      
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="myNavbar">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logofonavid.png" alt="Logo FONAVID">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#fonavid">FONAVID <span class="sr-only">(current)</span></a>
           </li>
@@ -56,23 +61,28 @@
   </header>
   <div class="main">
     <div class="apresentacao">
-      <div class="container">
+      <div class="container-lg">
         <div class="row">
           <div class="col">
-            <img src="assets/img/placeholder.png" class="img-fluid" alt="...">
+            <img src="assets/img/logoFONAVID.png" class="img-apresentacao-fonavid" alt="...">
           </div>
           <div class="col">
-            <span>
-              29 DE NOVEMBRO A 2 DE DEZEMBRO DE 2021
-              TERESINA - PIAUÍ
-              *Modalidade Hibrida
-              (presencial e virtual)
-            </span>
+            <div class="info-apresentacao">
+              <span>
+                29 DE NOVEMBRO A 2 DE DEZEMBRO DE 2021
+                TERESINA - PIAUÍ
+                *Modalidade Hibrida
+                (presencial e virtual)
+              </span>
+
+            </div>
+
           </div>
         </div>
       </div>
     </div> <!-- apresentacao -->
-    <div class="fonavid">
+
+    <div id="fonavid">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -118,7 +128,7 @@
       </div>
     </div> <!-- fonavid -->
   </div>
-  <div class="inscricoes">
+  <div id="inscricoes">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -148,7 +158,7 @@
       </div>
     </div>
   </div><!-- inscricoes -->
-  <div class="programacoes">
+  <div id="programacoes">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -168,7 +178,7 @@
       </div>
     </div>
   </div><!-- programacoes -->
-  <div class="locais">
+  <div id="locais">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -185,7 +195,7 @@
       </div>
     </div>
   </div><!-- locais -->
-  <div class="palestrantes">
+  <div id="palestrantes">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -227,7 +237,7 @@
       </div>
     </div>
   </div><!-- palestrantes -->
-  <div class="turismo">
+  <div id="turismo">
     <div class="container">
       <div class="row">
         <div class="col-6">
@@ -261,8 +271,8 @@
         <div class="col-6">
           <div class="image-teresina">
             <figure class="figure">
-              <img src="assets/img/placeholder.png" class="img-fluid" alt="...">
-              <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+              <img src="assets/img/Ponte Estaiada.JPG" class="img-ponte-teresina img-fluid rounded-2" alt="Ponte estaiada em Teresina">
+              <figcaption class="figure-caption text-right">Ponte estaiada em Teresina</figcaption>
             </figure>
           </div>
         </div>
@@ -276,13 +286,13 @@
                     <h4>CENTRO DE ARTESANATO MESTRE DEZINHO</h4>
                     <div class="image-centro-artesanato">
                       <figure class="figure">
-                        <img src="assets/img/placeholder.png" class="img-fluid" alt="...">
-                        <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+                        <img src="assets/img/Artesanato.JPG" class="img-fluid" alt="Centro de Artesanato Mestre Dezinho">
+                        <figcaption class="figure-caption text-right">Centro de Artesanato Mestre Dezinho</figcaption>
                       </figure>
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="horario-funcionamento-centro-artesanato">
+                    <div class="horario-funcionamento">
                       <h6>Horário de Funcionamento</h6>
                       <span>Segunda a Sexta: 8h às 17h;</span><br>
                       <span>Sábado: 9h às 13h.</span>
@@ -295,13 +305,13 @@
                     <h4>COMPLEXO TURÍSTICO MIRANTE PONTE ESTAIADA</h4>
                     <div class="image-ponte-estaiada">
                       <figure class="figure">
-                        <img src="assets/img/placeholder.png" class="img-fluid" alt="...">
+                        <img src="assets/img/Ponte Estaiada.JPG" class="img-fluid" alt="...">
                         <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
                       </figure>
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="horario-funcionamento-ponte-estaiada">
+                    <div class="horario-funcionamento">
                       <h6>Horário de Funcionamento</h6>
                       <span>Terça à Sexta: 9h às 18h;</span><br>
                       <span>Sábado e Domingo: 9h às 19h.</span>
@@ -314,13 +324,13 @@
                     <h4>PARQUE AMBIENTAL ENCONTRO DOS RIOS</h4>
                     <div class="image-parque-ambiental">
                       <figure class="figure">
-                        <img src="assets/img/placeholder.png" class="img-fluid" alt="...">
+                        <img src="assets/img/Encontro dos Rios.JPG" class="img-fluid" alt="...">
                         <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
                       </figure>
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="horario-funcionamento-parque-ambiental">
+                    <div class="horario-funcionamento">
                       <h6>Horário de Funcionamento</h6>
                       <span>Terça à Sexta: 9h às 18h;</span><br>
                       <span>Sábado e Domingo: 9h às 19h.</span>
@@ -334,7 +344,7 @@
         </div>
       </div>
     </div><!-- turismo -->
-    <div class="hospedagens">
+    <div id="hospedagens">
       <div class="container">
         <div class="row">
           <div class="col-6">
@@ -353,7 +363,7 @@
           <div class="col-6">
             <div class="image-hotel-oficial">
               <figure class="figure">
-                <img src="assets/img/placeholder.png" class="img-fluid" alt="...">
+                <img src="assets/img/Blue Tree Hotel.JPG" class="img-fluid" alt="...">
                 <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
               </figure>
             </div>
@@ -362,13 +372,13 @@
             <div class="row">
               <div class="col">
                 <div class="outrosHoteis">
-                  <h1>OUTROS HOTEIS EM TERESINA</h1>
+                  <h1>Outros Hotéis em Teresina</h1>
                   <div class="row">
                     <div class="col-6">
                       <h4>METROPOLITAN HOTEL</h4>
                       <div class="image-metropolitan-hotel">
                         <figure class="figure">
-                          <img src="assets/img/placeholder.png" class="img-fluid" alt="...">
+                          <img src="assets/img/Metropolitan1.JPG" class="img-fluid" alt="...">
                           <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
                         </figure>
                       </div>
@@ -387,7 +397,7 @@
                       <h4>UCHÔA TERESINA HOTEL</h4>
                       <div class="image-uchoa-hotel">
                         <figure class="figure">
-                          <img src="assets/img/placeholder.png" class="img-fluid" alt="...">
+                          <img src="assets/img/Uchoa Hotel1.JPG" class="img-fluid" alt="...">
                           <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
                         </figure>
                       </div>
@@ -406,7 +416,7 @@
                       <h4>GRAND HOTEL ARREY</h4>
                       <div class="image-grand-hotel">
                         <figure class="figure">
-                          <img src="assets/img/placeholder.png" class="img-fluid" alt="...">
+                          <img src="assets/img/Gran Hotel Arrey.JPG" class="img-fluid" alt="...">
                           <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
                         </figure>
                       </div>
@@ -424,7 +434,7 @@
                       <h4>HOTEL EXPRESS ARREY</h4>
                       <div class="image-express-hotel">
                         <figure class="figure">
-                          <img src="assets/img/placeholder.png" class="img-fluid" alt="...">
+                          <img src="assets/img/Executive Arrey1.JPG" class="img-fluid" alt="...">
                           <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
                         </figure>
                       </div>
@@ -444,7 +454,7 @@
           </div>
         </div>
       </div><!-- turismo -->
-      <div class="apoios">
+      <div id="apoios">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -464,7 +474,7 @@
                   <figure class="figure">
                     <img src="assets/img/placeholder.png" class="img-thumbnail" alt="...">
                   </figure>
-                </div> 
+                </div>
 
               </div>
 
