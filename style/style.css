@@ -6,6 +6,9 @@ h1{
     font-size: 4.6em;
     color: rgb(248, 148, 9);
 
+}
+p{
+    text-align: justify;
 }   
 
 body{
@@ -79,6 +82,7 @@ body{
 }
 .teresina{
     padding-top: 20%;
+
 }
 .hospedagem{
     padding-top: 20%;
@@ -91,33 +95,12 @@ body{
 }
 
 .img-apresentacao-fonavid{
-    max-width: 100%;
+    max-width: 75%;
     vertical-align: middle;
     display: inline-block;
-    padding-top: 70%;
+    padding-top: 30%;
     position: relative;
-    right: 40%;
-}
-.img-ponte-teresina{
-    max-width: 100%;
-    vertical-align: middle;
-    padding-top: 20%;
-    display: inline-block;
-    position: relative;
-    left: 30%;
-}
-
-.info-apresentacao{
-    vertical-align: middle;
-    display: inline-block;
-    padding-top: 70%;
-    padding-bottom: 100px;
-    position: relative;
-    left: 40%;
-    font-weight: 300;
-    font-size: 1.8em;
-    color: white;
-
+    right: 30%;
 }
 .img-ponte-teresina{
     max-width: 100%;
@@ -127,6 +110,17 @@ body{
     position: relative;
     left: 30%;
 }
+
+.info-apresentacao{
+    position: relative;
+    right: 50%;
+    font-weight: 200;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+
+}
+
 .img-hotel-blue-tree{
     max-width: 100%;
     vertical-align: middle;
@@ -166,10 +160,101 @@ body{
     left: 30%;
 
 }
+.figure-caption-ponte-estaiada{
+    text-align: right;
+}
 
 #fonavid{
     padding-top: 5%;
 }
 
+@media  (max-width: 576px) {
+    h1{
+        font-size: 3.0em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1.3em;
+    }
+    h4{
+        font-size: 1.0em;
+    }
+    p{
+        text-align: justify;
+    }
+
+    .img-apresentacao-fonavid{
+        max-width: 100%;
+        position: relative;
+        margin-left: 30%;
+        padding-top: 30%;
+
+    }
+    .info-apresentacao{
+        max-width: 100%;
+        position: relative;
+        left: 3%;
+        font-size: 20px;
+        padding-top: 20%;
+        text-align: left;
+        
+    }
+    .img-ponte-teresina{
+        max-width: 90%;
+        padding-top: 20%;
+        position: relative;
+        left: 5%;
+    }
+    .figure-caption-ponte-estaiada{
+        text-align: center;
+    }
+    .img-ponto-turistico{
+        max-width: 100%;
+        padding: 0%;
+    }
+    .horario-funcionamento{
+        padding: 0% 0% 10%;
+        position: relative;
+        left: 15%;
+        text-align: center;
+    
+    }
+    .img-hotel-blue-tree{
+        max-width: 90%;
+        padding-top: 20%;
+        position: relative;
+        left: 5%;
+    }
+    .info-hoteis{
+        padding: 0% 0% 10%;
+        position: relative;
+        left: 1%;
+        text-align: center;
+    
+    }
+    .img-hoteis{
+        max-width: 100%;
+        padding: 0;
+        
+    }
+ 
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
 
 
