@@ -1,9 +1,4 @@
-// Identificar o clique no menu
-// Verificar o item que foi clicado e fazer referência com o alvo
-// Verificar a distância entre o alvo e o topo
-// Animar o scroll até o alvo
-
-const menuItems = document.querySelectorAll('.navbar a[href^="#"]');
+const menuItems = document.querySelectorAll('.navbar-nav a[href^="#"]');
 
 menuItems.forEach(item => {
   item.addEventListener('click', scrollToIdOnClick);
@@ -21,10 +16,6 @@ function scrollToIdOnClick(event) {
 }
 
 function scrollToPosition(to) {
-  // window.scroll({
-  //   top: to,
-  //   behavior: "smooth",
-  // });
   smoothScrollTo(0, to);
 }
 
@@ -43,7 +34,6 @@ function smoothScrollTo(endX, endY, duration) {
 
   duration = typeof duration !== 'undefined' ? duration : 400;
 
-  // Easing function
   const easeInOutQuart = (time, from, distance, duration) => {
     if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
     return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
